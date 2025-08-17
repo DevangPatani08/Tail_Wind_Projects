@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* 
+  <weight>: Use a value from 300 to 700
+  <width>: Use a value from 75 to 125
+  <uniquifier>: Use a unique and descriptive class name
+*/
+
+/* 
+.fredoka-<uniquifier> {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" <width>;
+} 
+*/
