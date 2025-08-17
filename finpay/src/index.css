@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-green-100: #E9F3F4;
+  --color-green-500: #2A8E9E;
+  --color-green-900: #023347;
+  --color-green-800: #0B3A4F;
+  --color-blue-900: #180D39;
+  --color-gray-900: #1D1E20;
+  --color-gray-500: #BFC4C4;
+}
+
+* {
+  font-family: Helvetica, sans-serif;
+}
