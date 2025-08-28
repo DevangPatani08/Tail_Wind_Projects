@@ -1,18 +1,79 @@
 @import "tailwindcss";
 
-/* 
-  <weight>: Use a value from 300 to 700
-  <width>: Use a value from 75 to 125
-  <uniquifier>: Use a unique and descriptive class name
-*/
+.font_brand {
+    font-family: "Fredoka", sans-serif;
+  }
 
-/* 
-.fredoka-<uniquifier> {
-  font-family: "Fredoka", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" <width>;
-} 
-*/
+.font_plain {
+  font-family: "Poppins", sans-serif;
+}
+
+@theme {
+  --color-p: #F5BC22;
+  --color-s: #FF8D09;
+  --color-n: #1A1A1A;
+  --color-n-m: #5A5A5A;
+  --color-bg-d: #E1E4E1;
+  --color-bg: #F6F9F8;
+  --color-bg-b: #FFFFFF;
+  --color-bd: #CCCFCC;
+}
+
+.category-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+.category-image-container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.category-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.category-card:hover .category-image {
+  transform: scale(1.4);
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+  text-align: center;
+}
+
+.category-card:hover .category-overlay {
+  opacity: 1;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
